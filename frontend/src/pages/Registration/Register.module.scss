@@ -1,0 +1,55 @@
+.root {
+  max-width: 400px;
+  padding: 20px 40px;
+  border: 1px solid #dedede;
+  margin: 50px auto;
+   @media (max-width: 571px) {
+    padding: 20px;
+  }
+}
+
+.field {
+  margin-bottom: 20px !important;
+   @media (max-width: 571px) {
+    label {
+      font-size: 12px;
+    }
+  }
+
+  div {
+    @media (max-width: 571px) {
+      max-width: 100%;
+      height: 40px;
+      font-size: 15px;
+    }
+  }
+}
+
+form {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  button {
+    @media (max-width: 571px) {
+      max-width: 100%;
+      font-size: clamp(13px, 3vw, 19px) !important;
+      font-size: 10px;
+    }
+  }
+}
+
+.title {
+  text-align: center !important;
+  font-weight: bold !important;
+  margin-bottom: 30px !important;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  
+  
+}

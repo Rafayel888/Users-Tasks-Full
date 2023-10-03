@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+ul {
+  .activePage {
+    background-color: greenyellow !important;
+  }
+}

@@ -1,0 +1,55 @@
+.root {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+
+   @media (max-width: 426px) {
+    height: 35px;
+    font-size: 12px;
+  }
+}
+
+.logo {
+  background-color: black;
+  color: #fff;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  border-radius: 5px;
+  padding: 0 10px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #4361ee;
+  }
+
+  @media (max-width: 390px) {
+    height: 35px;
+   font-size: clamp(8px, 3vw, 10px) !important;
+  }
+}
+
+.buttons {
+  button {
+    margin-left: 10px;
+    @media (max-width: 571px) {
+      height: 40px;
+      font-size: 11px;
+    }
+
+    @media (max-width: 390px) {
+      height: 30px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

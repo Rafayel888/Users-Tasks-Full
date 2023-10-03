@@ -1,0 +1,75 @@
+@import '../../base.scss';
+
+.sort__up {
+    // margin-top: 40px;
+    // margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+   
+    .sort__div {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+      }
+
+      .sort__name {
+        position: relative;
+        margin-right: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #3f4e65;
+
+        p {
+          cursor: pointer;
+        }
+        p::after {
+          display: inline-flex;
+          margin-left: 5px;
+          content: url(../../../public/svg/Polygon.svg);
+        }
+
+        .list__elm {
+          position: absolute;
+          width: 180px;
+          font-size: 15px;
+          border-radius: 10px;
+          z-index: 1;
+          background-color: white;
+          &.active {
+            display: block;
+           
+          }
+        }
+
+        ul {
+          display: block;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.39);
+          li:hover {
+            background: linear-gradient(
+              90deg,
+              rgba(247, 216, 155, 0.1) 0%,
+              rgba(242, 216, 169, 0.1) 97.25%
+            );
+            cursor: pointer;
+          }
+          li {
+            padding: 8px 10px 5px 15px;
+            color: $mainColor_1;
+          margin: 0 !important;
+          }
+          li.active {
+            color:red;
+          }
+        }
+      }
+    }
+
+   
+  }
