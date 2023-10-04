@@ -1,6 +1,7 @@
 const userService = require('../service/user-service');
 const { validationResult } = require('express-validator');
 const ApiError = require('../exceptions/api-error');
+const UserDto = require('../dtos/user-dto');
 
 
 class UserController {
@@ -73,7 +74,10 @@ class UserController {
       const updateUser = await userService.updateUserProfile(userId, username, email);
 
       req.user = updateUser;
-      res.json(updateUser)
+    
+      const userUpDate = new UserDto(updateUser);
+     
+      res.json(userUpDate)
     } catch (error) {
       next(error)
     }
