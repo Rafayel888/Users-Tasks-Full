@@ -14,7 +14,6 @@ const Token = require('./token-model')(sequelize, Sequelize);
 
 
 User.hasMany(Task, { foreignKey: 'users_id', onUpdate: 'CASCADE', onDelete: 'CASCADE' });
-User.hasMany(Token, { foreignKey: 'users_id', onUpdate: 'CASCADE', onDelete: 'CASCADE' })
 
 //! belongsTo
 Task.belongsTo(User, { foreignKey: 'users_id', onUpdate: 'CASCADE', onDelete: 'CASCADE' });
